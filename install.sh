@@ -2,6 +2,32 @@
 sudo apt update 
 sudo apt upgrade
 sudo apt install zsh
+sudo apt install build-essential
+sudo apt install unzip 
+sudo apt install fd-find
+
+# Rip grep
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
+
+# Fonts
+curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
+
+gnf -i "Ubuntu Nerd Font"
+
+# # Install Rust
+# curl https://sh.rustup.rs -sSf | sh
+
+# Install nvm 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# # Add pyright
+# cargo add pyright
+
+npm install -g tree-sitter-cli
+npm install -g pyright
+
+
 chsh -s $(which zsh)
 
 # Install nvim 
@@ -22,5 +48,6 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
 git config --global user.email "ernstroell@gmail.com"
 git config --global user.name "Ernst Roell"
+
 
 
