@@ -1,1 +1,6 @@
-git clone --mirror <repository-url> <new-name>.git
+git clone --mirror git@github.com:ErnstRoell/dotfiles.git
+git submodule init 
+git submodule update
+
+
+
