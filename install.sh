@@ -10,10 +10,8 @@ sudo apt install fd-find
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
 sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
 
-# Fonts
-curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
 
-gnf -i "Ubuntu Nerd Font"
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # # Install Rust
 # curl https://sh.rustup.rs -sSf | sh
