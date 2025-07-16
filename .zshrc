@@ -2,6 +2,8 @@ export XDG_CONFIG_HOME="/home/ernst/.config"
 
 # Path to Neovim 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin:$HOME/.local/bin"
+export PATH="$PATH:/usr/local/texlive/2025/bin/x86_64-linux"
+
 export CUDA_HOME="/usr/local/cuda"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
 export PATH="$PATH:$CUDA_HOME/bin"
@@ -31,7 +33,8 @@ alias v='nvim'
 alias sp='cd $(fd -t d . /mnt/c/users/ernst/Documents | fzf)' 
 alias sd='cd $(fd -t d . /mnt/data | fzf)' 
 alias fo='nvim $(fd -t d . . | fzf)' 
-alias python='python3'
+alias python='/home/ernst/py3nvim/bin/python3'
+# alias ipython3='/home/ernst/py3nvim/bin/ipython3'
 alias du='dust -d 1'
 alias personal='cd /mnt/c/users/ernst/Documents/01-Personal'
 alias work='cd /mnt/c/users/ernst/Documents/02-Work'
